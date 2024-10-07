@@ -24,7 +24,9 @@ const connectDB = async () => {
   
   connectDB();
   // Die Funktion wird dann in server/index.js mit Datei als Ganzes aufgerufen
-  // import './db/server.js'
+  // import './db/server.js'  (fuer aktuellen Fall hier './db/index.js')
   // und damit ist die Verbindung zu Neon hergestellt
   
   export default pool;
+
+  // Eigentlich sollte diese Datei db/server.js lauten, wird jetzt aber nicht geaendert.
