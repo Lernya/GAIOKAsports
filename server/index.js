@@ -13,6 +13,10 @@ const PORT = 8000;
 // Middleware
 // Cors, fuer Parser für json-Body
 
+
+app.use(express.json()); // Body-Parser for POST-REQUESTS w/ JSON-Payloads, MUSS UNBEDINGT dabei sein für POST-Requests
+// The payload of an API is the data you are interested in transporting to the server when you make an API request. Simply put, it is the body of your HTTP request and response message.
+
 // Routes
 // app.get('/', (req, res) => res.send('Hello, World! ¡Hola Mundo! Hallo Welt!'));
 // Hier in index.js wird die Hauptroute definiert. Also das, was nach der Domain kommt und VOR dem, was in routers definiert wird.
