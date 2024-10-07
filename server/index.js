@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import "./db/index.js";
 import productsRouter from "./routers/productsRouter.js";
 import categoriesRouter from "./routers/categoriesRouter.js";
