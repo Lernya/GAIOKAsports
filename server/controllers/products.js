@@ -2,7 +2,9 @@ import pool from "../db/index.js";
 
 export const getAllProducts = async (req, res, next) => {
   try {
-    const result = await pool.query("SELECT * FROM gaioka_products");
+    const result = await pool.query(
+      "SELECT product_id, product_name, product_description, price, category_name, categoryid, product_img FROM gaioka_products LEFT JOIN gaioka_categories ON gaioka_products.categoryid = gaioka_categories.category_id"
+    );
     res.json(result.rows);
   } catch (error) {
     next(error);

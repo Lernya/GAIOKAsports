@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import "./db/index.js";
 // wichtig: immer Dateiendung js angeben
 import usersRouter from "./routers/usersRouter.js";
