@@ -8,10 +8,11 @@ const app = express();
 const PORT = 8000;
 
 // Middleware
-// Cors, fuer Parser für json-Body
+
+app.use(express.json());
 
 // Routes
-app.get("/", (req, res) => res.send("Hello, World! ¡Hola Mundo! Hallo Welt!"));
+// app.get("/", (req, res) => res.send("Hello, World! ¡Hola Mundo! Hallo Welt!"));
 
 app.use("/products", productsRouter);
 app.use("/categories", categoriesRouter);
