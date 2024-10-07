@@ -10,7 +10,7 @@ const PORT = 8000;
 // Middleware
 
 app.use(express.json());
-
+app.use(cors());
 // Routes
 // app.get("/", (req, res) => res.send("Hello, World! ¡Hola Mundo! Hallo Welt!"));
 
