@@ -1,9 +1,6 @@
-// .gitignore
+# .gitignore im Projektordner
 
-<<<<<<< HEAD
 client/node_modules/
 server/node_modules/
-=======
->>>>>>> 811c45c26feadcf706edeacbb1a40690924599f6
 node_modules/
 .env
