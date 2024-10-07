@@ -1,12 +1,27 @@
-function App() {
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+import LoginForm from "./pages/Login";
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Home />} />
+      <Route index element={<LoginForm />} />
+    </Route>
+  )
+);
+function App() {
   return (
     <>
-   <h1 className="text-3xl font-bold">
-      Willkommen bei GAIOKA Sports!
-    </h1>
+      <RouterProvider router={router} />;
     </>
-  )
+  );
 }
 
-export default App
+export default App;
