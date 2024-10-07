@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+// .gitignore
+=======
 # server/.gitignore
+>>>>>>> 19ba5648308c7e50e635f23b69dd25b6a8189b12
 
 node_modules/
 .env
