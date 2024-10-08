@@ -5,9 +5,10 @@ import Footer from "../components/Footer";
 
 const fetchClothing = async () => {
   try {
-    const res = await fetch("https://fakestoreapi.com/products");
+    const res = await fetch("http://localhost:8000/products");
     const data = await res.json();
     return data;
+    console.log(data);
   } catch (error) {
     console.error(error);
   }
