@@ -7,7 +7,7 @@ import {
 
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
-import LoginForm from "./pages/Login";
+import LoginForm from "./pages/LoginForm";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
