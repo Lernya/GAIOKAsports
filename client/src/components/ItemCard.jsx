@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 
 const ItemCard = ({ product }) => {
-  const { product_img, product_name, price, category_name } = product;
+  const {
+    product_img,
+    product_name,
+    product_description,
+    price,
+    category_name,
+  } = product;
   return (
     <div className="card glass w-96">
       <figure>
@@ -9,10 +15,11 @@ const ItemCard = ({ product }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product_name}</h2>
-        <p>{price}</p>
+        <p>{product_description}</p>
+        <p>{price} €</p>
         <div className="card-actions justify-end items-center">
           <Link>{category_name}</Link>
-          <button className="btn btn-primary">Add to cart</button>
+          <button className="btn btn-warning">Add to cart</button>
         </div>
       </div>
     </div>
