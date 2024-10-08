@@ -12,9 +12,9 @@ const app = express();
 const PORT = 8000;
 
 // Middleware
-// JSON- Body-Parser, Cors, Error-Handler,
+// JSON-Body-Parser, Cors, Error-Handler,
 
-app.use(express.json()); // Body-Parser for POST-REQUESTS w/ JSON-Payloads, Mein USS für POST-Requests
+app.use(express.json()); // Body-Parser for POST-REQUESTS w/ JSON-Payloads, ein MUSS für POST-Requests
 
 app.use(cors());
 
